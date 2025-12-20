@@ -1,0 +1,774 @@
+======================================================================
+MAIN SECTION BUILD CONFIGURATION REPORT
+======================================================================
+Generated: 2025-12-21 04:49:54
+Total Vehicles Processed: 47
+Prohibited Contents: change trim, compare, share, save, print, email, dealer, inventory, contact, chat, help, support, faq, legal, privacy, terms, cookie, feedback
+
+==================================================
+VEHICLE 1: 2025 KICKS PLAY™
+S
+==================================================
+Model: 2025 Kicks Play™
+Trim: S
+MSRP: $22,910 [*]
+
+Button Clicks:
+  Clicked: 3
+  Skipped (prohibited): 1
+  Total found: 5
+
+Features: 7
+Available Options: 0
+
+==================================================
+VEHICLE 2: 2026 KICKS®
+S
+==================================================
+Model: 2026 Kicks®
+Trim: S
+MSRP: $23,925 [*]
+
+Button Clicks:
+  Clicked: 2
+  Skipped (prohibited): 1
+  Total found: 7
+
+Features: 7
+Available Options: 0
+
+==================================================
+VEHICLE 3: 2026 KICKS®
+SV
+==================================================
+Model: 2026 Kicks®
+Trim: SV
+MSRP: $25,665 [*]
+
+Button Clicks:
+  Clicked: 2
+  Skipped (prohibited): 1
+  Total found: 7
+
+Features: 8
+Available Options: 0
+
+==================================================
+VEHICLE 4: 2026 KICKS®
+SR
+==================================================
+Model: Not found
+Trim: Not found
+MSRP: Not found
+
+Button Clicks:
+  Clicked: 0
+  Skipped (prohibited): 0
+  Total found: 2
+
+Features: 0
+Available Options: 0
+
+==================================================
+VEHICLE 5: 2026 ROGUE®
+S
+==================================================
+Model: 2026 Rogue®
+Trim: S
+MSRP: $30,585 [*]
+
+Button Clicks:
+  Clicked: 2
+  Skipped (prohibited): 1
+  Total found: 7
+
+Features: 8
+Available Options: 0
+
+==================================================
+VEHICLE 6: 2026 ROGUE®
+SV
+==================================================
+Model: 2026 Rogue®
+Trim: SV
+MSRP: $31,585 [*]
+
+Button Clicks:
+  Clicked: 2
+  Skipped (prohibited): 1
+  Total found: 7
+
+Features: 9
+Available Options: 0
+
+==================================================
+VEHICLE 7: 2026 ROGUE®
+Rock Creek®
+==================================================
+Model: 2026 Rogue®
+Trim: Rock Creek®
+MSRP: $35,485 [*]
+
+Button Clicks:
+  Clicked: 2
+  Skipped (prohibited): 1
+  Total found: 6
+
+Features: 9
+Available Options: 0
+
+==================================================
+VEHICLE 8: 2026 ROGUE®
+PLATINUM
+==================================================
+Model: 2026 Rogue®
+Trim: Platinum
+MSRP: $40,485 [*]
+
+Button Clicks:
+  Clicked: 2
+  Skipped (prohibited): 1
+  Total found: 6
+
+Features: 9
+Available Options: 0
+
+==================================================
+VEHICLE 9: 2025 PATHFINDER®
+S
+==================================================
+Model: 2025 Pathfinder®
+Trim: S
+MSRP: $37,895 [*]
+
+Button Clicks:
+  Clicked: 4
+  Skipped (prohibited): 1
+  Total found: 6
+
+Features: 8
+Available Options: 0
+
+==================================================
+VEHICLE 10: 2025 PATHFINDER®
+SV
+==================================================
+Model: 2025 Pathfinder®
+Trim: SV
+MSRP: $40,885 [*]
+
+Button Clicks:
+  Clicked: 4
+  Skipped (prohibited): 1
+  Total found: 6
+
+Features: 9
+Available Options: 0
+
+==================================================
+VEHICLE 11: 2025 PATHFINDER®
+SL
+==================================================
+Model: 2025 Pathfinder®
+Trim: SL
+MSRP: $43,585 [*]
+
+Button Clicks:
+  Clicked: 4
+  Skipped (prohibited): 1
+  Total found: 6
+
+Features: 17
+Available Options: 0
+
+==================================================
+VEHICLE 12: 2025 PATHFINDER®
+Rock Creek®
+==================================================
+Model: 2025 Pathfinder®
+Trim: Rock Creek®
+MSRP: $45,985 [*]
+
+Button Clicks:
+  Clicked: 4
+  Skipped (prohibited): 1
+  Total found: 5
+
+Features: 8
+Available Options: 0
+
+==================================================
+VEHICLE 13: 2025 PATHFINDER®
+Platinum
+==================================================
+Model: 2025 Pathfinder®
+Trim: Platinum
+MSRP: $50,135 [*]
+
+Button Clicks:
+  Clicked: 4
+  Skipped (prohibited): 1
+  Total found: 6
+
+Features: 9
+Available Options: 0
+
+==================================================
+VEHICLE 14: 2026 MURANO®
+SV
+==================================================
+Model: 2026 Murano®
+Trim: SV
+MSRP: $43,165 [*]
+
+Button Clicks:
+  Clicked: 2
+  Skipped (prohibited): 1
+  Total found: 6
+
+Features: 9
+Available Options: 0
+
+==================================================
+VEHICLE 15: 2026 MURANO®
+SL
+==================================================
+Model: 2026 Murano®
+Trim: SL
+MSRP: $48,255 [*]
+
+Button Clicks:
+  Clicked: 2
+  Skipped (prohibited): 1
+  Total found: 6
+
+Features: 10
+Available Options: 0
+
+==================================================
+VEHICLE 16: 2026 MURANO®
+Platinum
+==================================================
+Model: 2026 Murano®
+Trim: Platinum
+MSRP: $51,295 [*]
+
+Button Clicks:
+  Clicked: 2
+  Skipped (prohibited): 1
+  Total found: 6
+
+Features: 9
+Available Options: 0
+
+==================================================
+VEHICLE 17: 2026 NISSAN LEAF®
+S+
+==================================================
+Model: 2026 Nissan LEAF®
+Trim: S+
+MSRP: $31,485 [*]
+
+Button Clicks:
+  Clicked: 4
+  Skipped (prohibited): 1
+  Total found: 5
+
+Features: 7
+Available Options: 0
+
+==================================================
+VEHICLE 18: 2026 NISSAN LEAF®
+SV+
+==================================================
+Model: 2026 Nissan LEAF®
+Trim: SV+
+MSRP: $35,725 [*]
+
+Button Clicks:
+  Clicked: 4
+  Skipped (prohibited): 1
+  Total found: 5
+
+Features: 8
+Available Options: 0
+
+==================================================
+VEHICLE 19: 2026 NISSAN LEAF®
+Platinum+
+==================================================
+Model: 2026 Nissan LEAF®
+Trim: Platinum+
+MSRP: $40,485 [*]
+
+Button Clicks:
+  Clicked: 4
+  Skipped (prohibited): 1
+  Total found: 5
+
+Features: 8
+Available Options: 0
+
+==================================================
+VEHICLE 20: 2026 ARMADA®
+SV
+==================================================
+Model: 2026 Armada®
+Trim: SV
+MSRP: $61,030 [*]
+
+Button Clicks:
+  Clicked: 4
+  Skipped (prohibited): 1
+  Total found: 6
+
+Features: 8
+Available Options: 0
+
+==================================================
+VEHICLE 21: 2026 ARMADA®
+SL
+==================================================
+Model: 2026 Armada®
+Trim: SL
+MSRP: $65,720 [*]
+
+Button Clicks:
+  Clicked: 4
+  Skipped (prohibited): 1
+  Total found: 6
+
+Features: 9
+Available Options: 0
+
+==================================================
+VEHICLE 22: 2026 ARMADA®
+Platinum
+==================================================
+Model: 2026 Armada®
+Trim: Platinum
+MSRP: $72,680 [*]
+
+Button Clicks:
+  Clicked: 4
+  Skipped (prohibited): 1
+  Total found: 6
+
+Features: 9
+Available Options: 0
+
+==================================================
+VEHICLE 23: 2026 ARMADA®
+PRO-4X®
+==================================================
+Model: Not found
+Trim: Not found
+MSRP: $76,490 [*]
+
+Button Clicks:
+  Clicked: 4
+  Skipped (prohibited): 1
+  Total found: 5
+
+Features: 0
+Available Options: 0
+
+==================================================
+VEHICLE 24: 2026 ARMADA®
+Platinum Reserve
+==================================================
+Model: 2026 Armada®
+Trim: Platinum Reserve
+MSRP: $79,740 [*]
+
+Button Clicks:
+  Clicked: 4
+  Skipped (prohibited): 1
+  Total found: 6
+
+Features: 9
+Available Options: 0
+
+==================================================
+VEHICLE 25: 2026 ARMADA®
+NISMO
+==================================================
+Model: 2026 Armada®
+Trim: NISMO®
+MSRP: $82,470 [*]
+
+Button Clicks:
+  Clicked: 4
+  Skipped (prohibited): 1
+  Total found: 5
+
+Features: 8
+Available Options: 0
+
+==================================================
+VEHICLE 26: 2025 VERSA®
+S
+==================================================
+Model: 2025 Versa®
+Trim: S
+MSRP: $18,635 [*]
+
+Button Clicks:
+  Clicked: 4
+  Skipped (prohibited): 1
+  Total found: 6
+
+Features: 7
+Available Options: 0
+
+==================================================
+VEHICLE 27: 2025 VERSA®
+SV
+==================================================
+Model: 2025 Versa®
+Trim: SV
+MSRP: $21,935 [*]
+
+Button Clicks:
+  Clicked: 4
+  Skipped (prohibited): 1
+  Total found: 5
+
+Features: 7
+Available Options: 0
+
+==================================================
+VEHICLE 28: 2025 VERSA®
+SR
+==================================================
+Model: 2025 Versa®
+Trim: SR
+MSRP: $22,635 [*]
+
+Button Clicks:
+  Clicked: 4
+  Skipped (prohibited): 1
+  Total found: 5
+
+Features: 7
+Available Options: 0
+
+==================================================
+VEHICLE 29: 2026 SENTRA®
+S
+==================================================
+Model: 2026 Sentra®
+Trim: S
+MSRP: $23,845 [*]
+
+Button Clicks:
+  Clicked: 4
+  Skipped (prohibited): 1
+  Total found: 5
+
+Features: 8
+Available Options: 0
+
+==================================================
+VEHICLE 30: 2026 SENTRA®
+SV
+==================================================
+Model: 2026 Sentra®
+Trim: SV
+MSRP: $24,615 [*]
+
+Button Clicks:
+  Clicked: 4
+  Skipped (prohibited): 1
+  Total found: 5
+
+Features: 8
+Available Options: 0
+
+==================================================
+VEHICLE 31: 2026 SENTRA®
+SR
+==================================================
+Model: 2026 Sentra®
+Trim: SR
+MSRP: $26,245 [*]
+
+Button Clicks:
+  Clicked: 4
+  Skipped (prohibited): 1
+  Total found: 5
+
+Features: 9
+Available Options: 0
+
+==================================================
+VEHICLE 32: 2026 SENTRA®
+SL
+==================================================
+Model: 2026 Sentra®
+Trim: SL
+MSRP: $29,235 [*]
+
+Button Clicks:
+  Clicked: 4
+  Skipped (prohibited): 1
+  Total found: 5
+
+Features: 10
+Available Options: 0
+
+==================================================
+VEHICLE 33: 2025 ALTIMA®
+S
+==================================================
+Model: 2025 Altima®
+Trim: S
+MSRP: $28,245 [*]
+
+Button Clicks:
+  Clicked: 4
+  Skipped (prohibited): 1
+  Total found: 5
+
+Features: 7
+Available Options: 0
+
+==================================================
+VEHICLE 34: 2025 ALTIMA®
+SV
+==================================================
+Model: 2025 Altima®
+Trim: SV
+MSRP: $28,675 [*]
+
+Button Clicks:
+  Clicked: 2
+  Skipped (prohibited): 1
+  Total found: 7
+
+Features: 8
+Available Options: 0
+
+==================================================
+VEHICLE 35: 2025 ALTIMA®
+SV Special Edition
+==================================================
+Model: 2025 Altima®
+Trim: SV Special Edition
+MSRP: $29,765 [*]
+
+Button Clicks:
+  Clicked: 2
+  Skipped (prohibited): 1
+  Total found: 7
+
+Features: 8
+Available Options: 0
+
+==================================================
+VEHICLE 36: 2025 ALTIMA®
+SR
+==================================================
+Model: 2025 Altima®
+Trim: SR
+MSRP: $30,075 [*]
+
+Button Clicks:
+  Clicked: 2
+  Skipped (prohibited): 1
+  Total found: 7
+
+Features: 9
+Available Options: 0
+
+==================================================
+VEHICLE 37: 2025 ALTIMA®
+SL
+==================================================
+Model: 2025 Altima®
+Trim: SL
+MSRP: $34,575 [*]
+
+Button Clicks:
+  Clicked: 2
+  Skipped (prohibited): 1
+  Total found: 7
+
+Features: 8
+Available Options: 0
+
+==================================================
+VEHICLE 38: 2026 FRONTIER®
+S
+==================================================
+Model: 2026 Frontier®
+Trim: King Cab® S
+MSRP: $33,845 [*]
+
+Button Clicks:
+  Clicked: 4
+  Skipped (prohibited): 1
+  Total found: 6
+
+Features: 11
+Available Options: 0
+
+==================================================
+VEHICLE 39: 2026 FRONTIER®
+SV
+==================================================
+Model: 2026 Frontier®
+Trim: Crew Cab SV
+MSRP: $37,885 [*]
+
+Button Clicks:
+  Clicked: 4
+  Skipped (prohibited): 1
+  Total found: 6
+
+Features: 10
+Available Options: 0
+
+==================================================
+VEHICLE 40: 2026 FRONTIER®
+Long Bed SV
+==================================================
+Model: 2026 Frontier®
+Trim: Crew Cab SV Long Bed
+MSRP: $38,385 [*]
+
+Button Clicks:
+  Clicked: 4
+  Skipped (prohibited): 1
+  Total found: 6
+
+Features: 10
+Available Options: 0
+
+==================================================
+VEHICLE 41: 2026 FRONTIER®
+PRO-X®
+==================================================
+Model: 2026 Frontier®
+Trim: Crew Cab PRO-X®
+MSRP: $40,265 [*]
+
+Button Clicks:
+  Clicked: 4
+  Skipped (prohibited): 1
+  Total found: 5
+
+Features: 11
+Available Options: 0
+
+==================================================
+VEHICLE 42: 2026 FRONTIER®
+PRO-4X®
+==================================================
+Model: 2026 Frontier®
+Trim: Crew Cab PRO-4X®
+MSRP: $43,565 [*]
+
+Button Clicks:
+  Clicked: 4
+  Skipped (prohibited): 1
+  Total found: 5
+
+Features: 10
+Available Options: 0
+
+==================================================
+VEHICLE 43: 2026 FRONTIER®
+Long Bed PRO-4X®
+==================================================
+Model: 2026 Frontier®
+Trim: Crew Cab PRO-4X® Long Bed
+MSRP: $44,065 [*]
+
+Button Clicks:
+  Clicked: 4
+  Skipped (prohibited): 1
+  Total found: 5
+
+Features: 10
+Available Options: 0
+
+==================================================
+VEHICLE 44: 2026 NISSAN Z®
+Sport
+==================================================
+Model: 2026 Nissan Z®
+Trim: Sport
+MSRP: $44,215 [*]
+
+Button Clicks:
+  Clicked: 4
+  Skipped (prohibited): 1
+  Total found: 6
+
+Features: 7
+Available Options: 0
+
+==================================================
+VEHICLE 45: 2026 NISSAN Z®
+Performance
+==================================================
+Model: 2026 Nissan Z®
+Trim: Performance
+MSRP: $54,215 [*]
+
+Button Clicks:
+  Clicked: 4
+  Skipped (prohibited): 1
+  Total found: 6
+
+Features: 13
+Available Options: 0
+
+==================================================
+VEHICLE 46: 2026 NISSAN Z®
+Heritage Edition
+==================================================
+Model: 2026 Nissan Z®
+Trim: Heritage Edition (Z32 Midnight Purple)
+MSRP: $57,155 [*]
+
+Button Clicks:
+  Clicked: 4
+  Skipped (prohibited): 1
+  Total found: 6
+
+Features: 8
+Available Options: 0
+
+==================================================
+VEHICLE 47: 2026 NISSAN Z®
+NISMO®
+==================================================
+Model: 2026 Nissan Z®
+Trim: NISMO®
+MSRP: $66,995 [*]
+
+Button Clicks:
+  Clicked: 4
+  Skipped (prohibited): 1
+  Total found: 5
+
+Features: 11
+Available Options: 0
+
+
+======================================================================
+OVERALL SUMMARY
+======================================================================
+Total vehicles: 47
+Total buttons clicked: 157
+Total buttons skipped (prohibited): 46
+Average clicks per vehicle: 3.3
+Average skipped per vehicle: 1.0
+
+Processing Rules:
+• Only main section processed (no navigation)
+• ESC key used for popup closing
+• Prohibited buttons skipped
+======================================================================
