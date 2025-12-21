@@ -1,0 +1,95 @@
+================================================================================
+COMPLETE MAIN SECTION BUILD CONFIGURATION REPORT
+================================================================================
+Generated: 2025-12-21 17:26:41
+Total Vehicles Processed: 2
+Items Extracted:
+  1. Main Vehicle Display Section
+  2. Navigation Tabs (disabled)
+  3. 360° Car Rotator
+  4. Vehicle Info, Features, Options, Pricing
+Prohibited Contents: change trim, compare, share, save, print, email, dealer, inventory, contact, chat, help, support, faq, legal, privacy, terms, cookie, feedback
+
+
+ACCESSORIES PROCESSING STATISTICS:
+  Total containers found: 22
+  Total buttons clicked: 8
+  Click success rate: 36.4%
+============================================================
+VEHICLE 1: 2025 KICKS PLAY™
+S
+============================================================
+
+1. MAIN VEHICLE DISPLAY:
+   Model Name: Not found
+   Trim Level: Not found
+   Change Trim Button: Not found
+   Elements found: 0/3
+
+3. 360° CAR ROTATOR:
+   Exists: False
+   Total images: 0
+
+4. PRICING:
+   MSRP: Not found
+
+5. BUTTON CLICKS:
+   Clicked: 0
+   Skipped (prohibited): 0
+
+6. OTHER DATA:
+   Features: 0
+   Available Options: 0
+   Current Selections: 0
+
+============================================================
+VEHICLE 2: 2026 KICKS®
+S
+============================================================
+
+1. MAIN VEHICLE DISPLAY:
+   Model Name: Not found
+   Trim Level: Not found
+   Change Trim Button: Not found
+   Elements found: 0/3
+
+3. 360° CAR ROTATOR:
+   Exists: True
+   Total images: 36
+
+4. PRICING:
+   Total MSRP: $23,925 [*]
+
+5. BUTTON CLICKS:
+   Clicked: 0
+   Skipped (prohibited): 0
+
+6. OTHER DATA:
+   Features: 0
+   Available Options: 0
+   Current Selections: 0
+
+
+================================================================================
+OVERALL SUMMARY
+================================================================================
+Total vehicles: 2
+Total buttons clicked: 0
+Total buttons skipped (prohibited): 0
+Average clicks per vehicle: 0.0
+Average skipped per vehicle: 0.0
+
+VEHICLE DISPLAY STATISTICS:
+  Total elements found: 0
+  Average per vehicle: 0.0/3
+
+CAR ROTATOR STATISTICS:
+  Vehicles with rotator: 1/2
+  Total car images: 36
+  Average images per rotator: 36.0
+
+Processing Rules:
+• Only main section processed (no navigation)
+• ESC key used for popup closing
+• Prohibited buttons skipped
+================================================================================

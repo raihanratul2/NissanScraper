@@ -178,3 +178,4 @@ class NissanScraperBase:
             print("Browser closed")
         except:
             pass
+

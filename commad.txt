@@ -1,0 +1,29 @@
+amake nissan er car build page er scraping er jonne akta code likhe daw amar kase base akt file ase already setar moddhe jei function gula ase sheigula iclude kortesi 
+_setup_driver
+_random_delay
+_scroll_to_element
+_scroll_to_element
+_safe_click
+_handle_cookies_popup
+_close_popups
+_scroll_page_gradually
+save_to_json
+print_car_list
+close
+
+ei function gula ase 
+akhon build program er jonne tumi amake kisu function diba jeigula build class er moddhei thakbe 
+firstly section gular jonne alada alada function
+section gular moddhe common hocche : 
+1. Section title: data-testid="NGST_QA_rail_section" eita selcect kore sectiondiv(NGST_QA_rail_section)>div>div>div>h3(section title)
+2. Section cards: ul(data-testid="NGST_QA_option_list") er moddhe joto gula li ase shobgula scrap korbe
+
+ei 2ta common rekhe 2ta function hobe aktar kaj thakbe Powertrain(id="powertrain"), Interior(), Packages
+
+powertrain_data
+target element id : "powertrain"
+
+
+Exterior: id="exterior"
+er moddhe thakte pare
+  Exterior Color: 
