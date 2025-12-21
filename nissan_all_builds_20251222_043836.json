@@ -1,0 +1,342 @@
+[
+  {
+    "url": "https://www.nissanusa.com/shopping-tools/build-price/c?modelCode=30175&versionCode=27015&optionkey=QM1",
+    "scraped_at": "2025-12-22T04:36:06.820787",
+    "vehicle_info": {},
+    "main_image": "https://ms-prd-nna.use.mediaserver.heliosnissan.net/iris/iris?vehicle=8_P15&resp=png&bkgnd=transparent&pov=E01&phase=0&width=1600&paint=QM1&fabric=G&brand=nisnna&sa=1_F,2_DT,4_A,5_L,6_R,7_Z,11_E,12_U,13_A,14_B,18_A,SHADOW_ON,PI_ON,PE_ON,2025&imwidth=3840",
+    "sections": {
+      "Drivetrain": {
+        "type": "powertrain",
+        "drivetrain": {
+          "options": [
+            {
+              "id": "drivetrain_0",
+              "basic_info": {
+                "image": "https://www.nissanusa.com/content/dam/Nissan/us/assets/2025/kicks-play/config2/variations/thumbnail/nissan-kicks-play-fwd.jpg?imwidth=384",
+                "image_alt": "Nissan Front-Wheel Drive",
+                "name": "Front-Wheel Drive",
+                "price": "",
+                "category": "",
+                "selected": true
+              },
+              "detailed_info": {
+                "detailed_image": "https://www.nissanusa.com/content/dam/Nissan/us/assets/2025/kicks-play/config2/variations/panel/nissan-kicks-play-fwd.jpg?imwidth=1920",
+                "detailed_image_alt": "Front-Wheel Drive",
+                "detailed_name": "Front-Wheel Drive",
+                "subname": "Power with pull",
+                "detailed_price": "Drivetrain",
+                "specifications": "Starting at\n$21,520\nCancel\nSelected",
+                "description": "A Front-wheel drive (FWD) drivetrain sends power to the front wheels of a vehicle. Most cars and SUVs use FWD. Due to the engine’s forward weight distribution, FWD vehicles have an advantage when climbing hills or on steeper terrain.",
+                "full_text": "POWERTRAIN\nDrivetrain\nFront-Wheel Drive\nPower with pull\nA Front-wheel drive (FWD) drivetrain sends power to the front wheels of a vehicle. Most cars and SUVs use FWD. Due to the engine’s forward weight distribution, FWD vehicles have an advantage when climbing hills or on steeper terrain.\nStarting at\n$21,520\nCancel\nSelected"
+              }
+            }
+          ],
+          "label": "Drivetrain"
+        }
+      },
+      "Exterior Color": {
+        "type": "exterior",
+        "colors": {
+          "standard": [
+            {
+              "type": "standard",
+              "selected": false,
+              "name": "Electric Blue Metallic",
+              "image": "https://www.nissanusa.com/content/dam/Nissan/us/colour_chips/Electric-blue-metallic_B51.png.ximg.c4.confDT.jpg?imwidth=96",
+              "image_alt": "Electric Blue Metallic Exterior Exterior Color"
+            },
+            {
+              "type": "standard",
+              "selected": false,
+              "name": "Super Black",
+              "image": "https://www.nissanusa.com/content/dam/Nissan/us/colour_chips/Exterior/general/kh3.jpg.ximg.c4.confDT.jpg?imwidth=96",
+              "image_alt": "Super Black Exterior Exterior Color"
+            },
+            {
+              "type": "standard",
+              "selected": false,
+              "name": "Gun Metallic",
+              "image": "https://www.nissanusa.com/content/dam/Nissan/us/colour_chips/Exterior/general/kad.jpg.ximg.c4.confDT.jpg?imwidth=96",
+              "image_alt": "Gun Metallic Exterior Exterior Color"
+            },
+            {
+              "type": "standard",
+              "selected": false,
+              "name": "Fresh Powder",
+              "image": "https://www.nissanusa.com/content/dam/Nissan/us/colour_chips/Exterior/qm1.jpg.ximg.c4.confDT.jpg?imwidth=96",
+              "image_alt": "Fresh Powder Exterior Exterior Color"
+            }
+          ],
+          "premium": []
+        }
+      },
+      "Color and Fabrics": {
+        "type": "generic",
+        "cards": [
+          {
+            "id": "card_0",
+            "basic_info": {
+              "image": "https://www.nissanusa.com/content/dam/Nissan/us/colour_chips/Interior/kicks-play/charcoal-cloth-gclh.png.ximg.c4.confDT.jpg?imwidth=384",
+              "image_alt": "Charcoal Cloth",
+              "name": "Charcoal Cloth",
+              "price": "",
+              "category": "",
+              "selected": true
+            },
+            "detailed_info": {
+              "detailed_image": "https://www.nissanusa.com/content/dam/Nissan/us/colour_chips/Interior/kicks-play/charcoal-cloth-gclh.png?imwidth=3840",
+              "detailed_image_alt": "Charcoal Cloth",
+              "detailed_name": "Charcoal Cloth",
+              "detailed_price": "Color and Fabrics",
+              "specifications": "MSRP\n$0 [*]",
+              "description": "1 of 1",
+              "full_text": "INTERIOR\nColor and Fabrics\nCharcoal Cloth\nMSRP\n$0 [*]\nFactory Installed\n1 of 1\nCharcoal Cloth\nMSRP\n$0\n [*]\nCancel\nSelected"
+            }
+          }
+        ]
+      },
+      "Exterior": {
+        "type": "exterior",
+        "colors": {
+          "standard": [
+            {
+              "type": "standard",
+              "selected": false,
+              "name": "Electric Blue Metallic",
+              "image": "https://www.nissanusa.com/content/dam/Nissan/us/colour_chips/Electric-blue-metallic_B51.png.ximg.c4.confDT.jpg?imwidth=96",
+              "image_alt": "Electric Blue Metallic Exterior Exterior Color"
+            },
+            {
+              "type": "standard",
+              "selected": false,
+              "name": "Super Black",
+              "image": "https://www.nissanusa.com/content/dam/Nissan/us/colour_chips/Exterior/general/kh3.jpg.ximg.c4.confDT.jpg?imwidth=96",
+              "image_alt": "Super Black Exterior Exterior Color"
+            },
+            {
+              "type": "standard",
+              "selected": false,
+              "name": "Gun Metallic",
+              "image": "https://www.nissanusa.com/content/dam/Nissan/us/colour_chips/Exterior/general/kad.jpg.ximg.c4.confDT.jpg?imwidth=96",
+              "image_alt": "Gun Metallic Exterior Exterior Color"
+            },
+            {
+              "type": "standard",
+              "selected": false,
+              "name": "Fresh Powder",
+              "image": "https://www.nissanusa.com/content/dam/Nissan/us/colour_chips/Exterior/qm1.jpg.ximg.c4.confDT.jpg?imwidth=96",
+              "image_alt": "Fresh Powder Exterior Exterior Color"
+            }
+          ],
+          "premium": []
+        },
+        "cards": [
+          {
+            "id": "exterior_card_0",
+            "basic_info": {
+              "image": "https://www.nissanusa.com/content/dam/Nissan/us/assets/2025/kicks-play/accessories/thumbnails/kicks-play-r92.jpg?imwidth=384",
+              "image_alt": "Rear Roof Spoiler",
+              "name": "",
+              "price": "",
+              "category": "",
+              "selected": false
+            },
+            "detailed_info": {}
+          },
+          {
+            "id": "exterior_card_1",
+            "basic_info": {
+              "image": "https://www.nissanusa.com/content/dam/Nissan/us/assets/2025/kicks-play/accessories/thumbnails/kicks-play-a30.jpg?imwidth=384",
+              "image_alt": "Side-Window Deflectors",
+              "name": "",
+              "price": "",
+              "category": "",
+              "selected": false
+            },
+            "detailed_info": {}
+          },
+          {
+            "id": "exterior_card_2",
+            "basic_info": {
+              "image": "https://www.nissanusa.com/content/dam/Nissan/us/assets/2025/kicks-play/accessories/thumbnails/kicks-play-a236.jpg?imwidth=384",
+              "image_alt": "Stainless Steel Exhaust Finisher",
+              "name": "",
+              "price": "",
+              "category": "",
+              "selected": false
+            },
+            "detailed_info": {}
+          }
+        ]
+      },
+      "Interior": {
+        "type": "interior",
+        "fabric_colors": {
+          "options": [
+            {
+              "id": "fabric_color_0",
+              "basic_info": {
+                "image": "https://www.nissanusa.com/content/dam/Nissan/us/assets/2025/kicks-play/accessories/thumbnails/kicks-play-a119.jpg?imwidth=384",
+                "image_alt": "All-Season Floor Mats (4-piece set)",
+                "name": "",
+                "price": "",
+                "category": "",
+                "selected": false
+              },
+              "detailed_info": {}
+            },
+            {
+              "id": "fabric_color_1",
+              "basic_info": {
+                "image": "https://www.nissanusa.com/content/dam/Nissan/us/assets/2025/kicks-play/accessories/thumbnails/kicks-play-n93.jpg?imwidth=384",
+                "image_alt": "Kick Plates — Door Sill Protectors",
+                "name": "",
+                "price": "",
+                "category": "",
+                "selected": false
+              },
+              "detailed_info": {}
+            },
+            {
+              "id": "fabric_color_2",
+              "basic_info": {
+                "image": "https://www.nissanusa.com/content/dam/Nissan/us/assets/2025/kicks-play/accessories/thumbnails/kicks-play-a258.jpg?imwidth=384",
+                "image_alt": "Carpeted Floor Mats (4-piece set)",
+                "name": "",
+                "price": "",
+                "category": "",
+                "selected": false
+              },
+              "detailed_info": {}
+            }
+          ],
+          "label": "Color and Fabrics"
+        }
+      },
+      "Lighting and Technology": {
+        "type": "generic",
+        "cards": [
+          {
+            "id": "card_0",
+            "basic_info": {
+              "image": "https://www.nissanusa.com/content/dam/Nissan/us/assets/2025/kicks-play/accessories/thumbnails/kicks-play-a373.jpg?imwidth=384",
+              "image_alt": "Frameless Auto-Dimming Rearview Mirror w/ Universal Remote",
+              "name": "",
+              "price": "",
+              "category": "",
+              "selected": false
+            },
+            "detailed_info": {}
+          },
+          {
+            "id": "card_1",
+            "basic_info": {
+              "image": "https://www.nissanusa.com/content/dam/Nissan/us/assets/2025/kicks-play/accessories/thumbnails/kicks-play-a367.jpg?imwidth=384",
+              "image_alt": "Frameless Rearview Mirror w/ Universal Remote",
+              "name": "",
+              "price": "",
+              "category": "",
+              "selected": false
+            },
+            "detailed_info": {}
+          },
+          {
+            "id": "card_2",
+            "basic_info": {
+              "image": "https://www.nissanusa.com/content/dam/Nissan/us/assets/2025/kicks-play/accessories/thumbnails/kicks-play-s93.jpg?imwidth=384",
+              "image_alt": "Dual Camera Drive Recorder [[2025_KICKS_PLAY_1471]][[2025_KICKS_PLAY_471]]",
+              "name": "",
+              "price": "",
+              "category": "",
+              "selected": false
+            },
+            "detailed_info": {}
+          },
+          {
+            "id": "card_3",
+            "basic_info": {
+              "image": "https://www.nissanusa.com/content/dam/Nissan/us/assets/2025/kicks-play/accessories/thumbnails/kicks-play-a49.jpg?imwidth=384",
+              "image_alt": "Security Impact Sensor",
+              "name": "",
+              "price": "",
+              "category": "",
+              "selected": false
+            },
+            "detailed_info": {}
+          }
+        ]
+      },
+      "Cargo": {
+        "type": "generic",
+        "cards": [
+          {
+            "id": "card_0",
+            "basic_info": {
+              "image": "https://www.nissanusa.com/content/dam/Nissan/us/assets/2025/kicks-play/accessories/thumbnails/kicks-play-a552.jpg?imwidth=384",
+              "image_alt": "Seatback Organizer",
+              "name": "",
+              "price": "",
+              "category": "",
+              "selected": false
+            },
+            "detailed_info": {}
+          },
+          {
+            "id": "card_1",
+            "basic_info": {
+              "image": "https://www.nissanusa.com/content/dam/Nissan/us/assets/2025/kicks-play/accessories/thumbnails/kicks-play-a239.jpg?imwidth=384",
+              "image_alt": "All-Season Cargo Area Protector",
+              "name": "",
+              "price": "",
+              "category": "",
+              "selected": false
+            },
+            "detailed_info": {}
+          },
+          {
+            "id": "card_2",
+            "basic_info": {
+              "image": "https://www.nissanusa.com/content/dam/Nissan/us/assets/2025/kicks-play/accessories/thumbnails/kicks-play-a553.jpg?imwidth=384",
+              "image_alt": "Cargo Level Load Floor",
+              "name": "",
+              "price": "",
+              "category": "",
+              "selected": false
+            },
+            "detailed_info": {}
+          },
+          {
+            "id": "card_3",
+            "basic_info": {
+              "image": "https://www.nissanusa.com/content/dam/Nissan/us/assets/2025/kicks-play/accessories/thumbnails/kicks-play-a557.jpg?imwidth=384",
+              "image_alt": "Soft Sided Cargo Cooler",
+              "name": "",
+              "price": "",
+              "category": "",
+              "selected": false
+            },
+            "detailed_info": {}
+          }
+        ]
+      }
+    },
+    "scraping_log": [
+      {
+        "timestamp": "2025-12-22T04:36:14.901895",
+        "level": "info",
+        "message": "Page loaded successfully"
+      },
+      {
+        "timestamp": "2025-12-22T04:36:55.961910",
+        "level": "info",
+        "message": "Main image extracted: https://ms-prd-nna.use.mediaserver.heliosnissan.ne..."
+      }
+    ],
+    "summary": {
+      "sections_count": 7,
+      "total_cards": 12,
+      "scraping_duration": "2025-12-22T04:37:55.847974",
+      "status": "completed"
+    }
+  }
+]

@@ -79,7 +79,7 @@ def run_full_process():
         print("="*60)
         
         # Import and run build configurator
-        from build_configurator import BuildConfigurator, main as run_build_config
+        from build_configurator import NissanBuildScraper, main as run_build_config
         
         run_build_config()
     else:

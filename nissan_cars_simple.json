@@ -1,0 +1,93 @@
+[
+  {
+    "id": 1,
+    "name": "2025\nKicks Play™",
+    "year": "2025",
+    "price": "$21,520",
+    "page_link": "https://www.nissanusa.com/shopping-tools/build-price?models=kicks-play"
+  },
+  {
+    "id": 2,
+    "name": "2026\nKicks®",
+    "year": "2026",
+    "price": "$22,430",
+    "page_link": "https://www.nissanusa.com/shopping-tools/build-price?models=kicks"
+  },
+  {
+    "id": 3,
+    "name": "2026\nRogue®",
+    "year": "2026",
+    "price": "$29,090",
+    "page_link": "https://www.nissanusa.com/shopping-tools/build-price?models=rogue"
+  },
+  {
+    "id": 4,
+    "name": "2025\nPathfinder®",
+    "year": "2025",
+    "price": "$36,400",
+    "page_link": "https://www.nissanusa.com/shopping-tools/build-price?models=pathfinder"
+  },
+  {
+    "id": 5,
+    "name": "2026\nMurano®",
+    "year": "2026",
+    "price": "$41,670",
+    "page_link": "https://www.nissanusa.com/shopping-tools/build-price?models=murano"
+  },
+  {
+    "id": 6,
+    "name": "2026\nElectric Vehicles\nNissan LEAF®",
+    "year": "2026",
+    "price": "$29,990",
+    "page_link": "https://www.nissanusa.com/shopping-tools/build-price?models=nissan-leaf"
+  },
+  {
+    "id": 7,
+    "name": "2026\nArmada®",
+    "year": "2026",
+    "price": "$58,840",
+    "page_link": "https://www.nissanusa.com/shopping-tools/build-price?models=armada"
+  },
+  {
+    "id": 8,
+    "name": "2026\nElectric Vehicles\nNissan LEAF®",
+    "year": "2026",
+    "price": "$29,990",
+    "page_link": "https://www.nissanusa.com/shopping-tools/build-price?models=nissan-leaf"
+  },
+  {
+    "id": 9,
+    "name": "2025\nVersa®",
+    "year": "2025",
+    "price": "$17,390",
+    "page_link": "https://www.nissanusa.com/shopping-tools/build-price?models=versa"
+  },
+  {
+    "id": 10,
+    "name": "2026\nSentra®",
+    "year": "2026",
+    "price": "$22,600",
+    "page_link": "https://www.nissanusa.com/shopping-tools/build-price?models=sentra"
+  },
+  {
+    "id": 11,
+    "name": "2025\nAltima®",
+    "year": "2025",
+    "price": "$27,000",
+    "page_link": "https://www.nissanusa.com/shopping-tools/build-price?models=altima"
+  },
+  {
+    "id": 12,
+    "name": "2026\nFrontier®",
+    "year": "2026",
+    "price": "$32,150",
+    "page_link": "https://www.nissanusa.com/shopping-tools/build-price?models=frontier"
+  },
+  {
+    "id": 13,
+    "name": "2026\nNissan Z®",
+    "year": "2026",
+    "price": "$42,970",
+    "page_link": "https://www.nissanusa.com/shopping-tools/build-price?models=nissan-z"
+  }
+]
