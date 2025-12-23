@@ -1,0 +1,123 @@
+{
+  "url": "https://www.nissanusa.com/shopping-tools/build-price/c?modelCode=30175&versionCode=27015&optionkey=QM1",
+  "scraped_at": "2025-12-23T13:16:37.459327",
+  "vehicle_info": {},
+  "main_image": "https://www.nissanusa.com/content/dam/Nissan/us/assets/config/backgrounds/exterior/kicks-play.jpg?imwidth=3840",
+  "sections": {
+    "Drivetrain": {
+      "type": "powertrain",
+      "drivetrain": {
+        "options": [
+          {
+            "id": "drivetrain_0",
+            "basic_info": {
+              "image": "https://www.nissanusa.com/content/dam/Nissan/us/assets/2025/kicks-play/config2/variations/thumbnail/nissan-kicks-play-fwd.jpg?imwidth=384",
+              "image_alt": "Nissan Front-Wheel Drive",
+              "name": "Front-Wheel Drive",
+              "price": "",
+              "category": "",
+              "selected": true
+            },
+            "detailed_info": {
+              "detailed_image": "https://www.nissanusa.com/content/dam/Nissan/us/assets/2025/kicks-play/config2/variations/panel/nissan-kicks-play-fwd.jpg?imwidth=1920",
+              "detailed_image_alt": "Front-Wheel Drive",
+              "detailed_name": "Front-Wheel Drive",
+              "subname": "Power with pull",
+              "full_text": "POWERTRAIN\nDrivetrain\nFront-Wheel Drive\nPower with pull\nA Front-wheel drive (FWD) drivetrain sends power to the front wheels of a vehicle. Most cars and SUVs use FWD. Due to the engine’s forward weight distribution, FWD vehicles have an advantage when climbing hills or on steeper terrain.\nStarting at\n$21,520\nCancel\nSelected"
+            }
+          }
+        ],
+        "label": "Drivetrain"
+      }
+    },
+    "Exterior Color": {
+      "type": "exterior",
+      "colors": {
+        "standard": [],
+        "premium": []
+      }
+    },
+    "Color and Fabrics": {
+      "type": "generic",
+      "cards": []
+    },
+    "Exterior": {
+      "type": "exterior",
+      "colors": {
+        "standard": [],
+        "premium": []
+      },
+      "cards": []
+    },
+    "Interior": {
+      "type": "interior",
+      "fabric_colors": {
+        "options": [
+          {
+            "id": "fabric_color_0",
+            "basic_info": {
+              "image": "https://www.nissanusa.com/content/dam/Nissan/us/assets/2025/kicks-play/accessories/thumbnails/kicks-play-a119.jpg?imwidth=384",
+              "image_alt": "All-Season Floor Mats (4-piece set)",
+              "name": "",
+              "price": "",
+              "category": "",
+              "selected": false
+            },
+            "detailed_info": {}
+          },
+          {
+            "id": "fabric_color_1",
+            "basic_info": {
+              "image": "https://www.nissanusa.com/content/dam/Nissan/us/assets/2025/kicks-play/accessories/thumbnails/kicks-play-n93.jpg?imwidth=384",
+              "image_alt": "Kick Plates — Door Sill Protectors",
+              "name": "",
+              "price": "",
+              "category": "",
+              "selected": false
+            },
+            "detailed_info": {}
+          },
+          {
+            "id": "fabric_color_2",
+            "basic_info": {
+              "image": "https://www.nissanusa.com/content/dam/Nissan/us/assets/2025/kicks-play/accessories/thumbnails/kicks-play-a258.jpg?imwidth=384",
+              "image_alt": "Carpeted Floor Mats (4-piece set)",
+              "name": "",
+              "price": "",
+              "category": "",
+              "selected": false
+            },
+            "detailed_info": {}
+          }
+        ],
+        "label": "Color and Fabrics"
+      }
+    },
+    "Lighting and Technology": {
+      "type": "generic",
+      "cards": []
+    },
+    "Cargo": {
+      "type": "generic",
+      "cards": []
+    }
+  },
+  "scraping_log": [
+    {
+      "timestamp": "2025-12-23T13:16:56.928123",
+      "level": "info",
+      "message": "Page loaded successfully"
+    },
+    {
+      "timestamp": "2025-12-23T13:17:09.495525",
+      "level": "info",
+      "message": "Main image extracted: https://www.nissanusa.com/content/dam/Nissan/us/as..."
+    }
+  ],
+  "summary": {
+    "sections_count": 7,
+    "total_cards": 0,
+    "scraping_duration": "2025-12-23T13:17:55.402154",
+    "status": "completed"
+  }
+}

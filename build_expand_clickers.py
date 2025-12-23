@@ -128,20 +128,11 @@ class SmartCardButtonClicker(NissanScraperBase):
             # Wait for page to load
             self.wait_for_page_load()
             
-            # Take before screenshot
-            before_screenshot = f"before_click_{trim_info.get('id', '0')}_{int(time.time())}.png"
-            self.driver.save_screenshot(before_screenshot)
-            
             # Click all card section buttons (with icon checking)
             card_results = self.click_card_buttons_with_icon_check()
             
             # Click Show More buttons
             show_more_results = self.click_show_more_buttons()
-            
-            # Take after screenshot
-            time.sleep(2)
-            after_screenshot = f"after_click_{trim_info.get('id', '0')}_{int(time.time())}.png"
-            self.driver.save_screenshot(after_screenshot)
             
             # Store combined results
             self.click_results[trim_info.get('car_name', 'Unknown')] = {
@@ -149,10 +140,6 @@ class SmartCardButtonClicker(NissanScraperBase):
                 'trim_info': trim_info,
                 'card_button_results': card_results,
                 'show_more_results': show_more_results,
-                'screenshots': {
-                    'before': before_screenshot,
-                    'after': after_screenshot
-                }
             }
             
             return True
@@ -389,12 +376,7 @@ class SmartCardButtonClicker(NissanScraperBase):
             state_after = button.get_attribute('aria-expanded')
             print(f"          State after: aria-expanded='{state_after}'")
             
-            # Take screenshot of this specific section
-            try:
-                timestamp = int(time.time())
-                self.driver.save_screenshot(f"section_{section_name.replace(' ', '_')}_{timestamp}.png")
-            except:
-                pass
+
             
             return True
             
@@ -574,8 +556,7 @@ class SmartCardButtonClicker(NissanScraperBase):
                     'total_found': show_more_results.get('total_found', 0),
                     'clicked': show_more_results.get('clicked', 0),
                     'buttons_found': show_more_results.get('buttons_found', [])
-                },
-                'screenshots': data.get('screenshots', {})
+                }
             }
             
             summary.append(summary_entry)
@@ -638,11 +619,11 @@ def main():
     print("4. Uses only STATIC classes")
     print("\n" + "="*70)
     
-    confirm = input("\nContinue? (yes/no): ").strip().lower()
+    # confirm = input("\nContinue? (yes/no): ").strip().lower()
     
-    if confirm not in ['yes', 'y']:
-        print("Operation cancelled.")
-        return
+    # if confirm not in ['yes', 'y']:
+    #     print("Operation cancelled.")
+    #     return
     
     # Create and run clicker
     clicker = SmartCardButtonClicker(headless=False)

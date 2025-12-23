@@ -1,0 +1,78 @@
+[
+  {
+    "url": "https://www.nissanusa.com/shopping-tools/build-price/c?modelCode=30175&versionCode=27015&optionkey=QM1",
+    "scraped_at": "2025-12-23T13:04:21.318830",
+    "vehicle_info": {},
+    "main_image": "https://www.nissanusa.com/content/dam/Nissan/us/assets/config/backgrounds/exterior/kicks-play.jpg?imwidth=3840",
+    "sections": {
+      "Drivetrain": {
+        "type": "powertrain",
+        "drivetrain": {
+          "options": [
+            {
+              "id": "drivetrain_0",
+              "basic_info": {
+                "image": "https://www.nissanusa.com/content/dam/Nissan/us/assets/2025/kicks-play/config2/variations/thumbnail/nissan-kicks-play-fwd.jpg?imwidth=384",
+                "image_alt": "Nissan Front-Wheel Drive",
+                "name": "Front-Wheel Drive",
+                "price": "",
+                "category": "",
+                "selected": true
+              },
+              "detailed_info": {}
+            }
+          ],
+          "label": "Drivetrain"
+        }
+      }
+    },
+    "scraping_log": [
+      {
+        "timestamp": "2025-12-23T13:04:43.179804",
+        "level": "info",
+        "message": "Page loaded successfully"
+      },
+      {
+        "timestamp": "2025-12-23T13:05:04.329396",
+        "level": "info",
+        "message": "Main image extracted: https://www.nissanusa.com/content/dam/Nissan/us/as..."
+      },
+      {
+        "timestamp": "2025-12-23T13:05:33.511241",
+        "level": "warning",
+        "message": "Section processing error: Message: stale element reference: stale element not found in the current frame\n  (Session info: chrome=143.0.7499.147); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception\nStacktrace:\nSymbols not available. Dumping unresolved backtrace:\n\t0x7ff6fad888e5\n\t0x7ff6fad88940\n\t0x7ff6fab6165d\n\t0x7ff6fab692cc\n\t0x7ff6fab6c3b4\n\t0x7ff6fab6c47f\n\t0x7ff6fabb92e5\n\t0x7ff6fabb9d3c\n\t0x7ff6faba"
+      },
+      {
+        "timestamp": "2025-12-23T13:05:33.517740",
+        "level": "warning",
+        "message": "Section processing error: Message: stale element reference: stale element not found in the current frame\n  (Session info: chrome=143.0.7499.147); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception\nStacktrace:\nSymbols not available. Dumping unresolved backtrace:\n\t0x7ff6fad888e5\n\t0x7ff6fad88940\n\t0x7ff6fab6165d\n\t0x7ff6fab692cc\n\t0x7ff6fab6c3b4\n\t0x7ff6fab6c47f\n\t0x7ff6fabb92e5\n\t0x7ff6fabb9d3c\n\t0x7ff6faba"
+      },
+      {
+        "timestamp": "2025-12-23T13:05:33.525239",
+        "level": "warning",
+        "message": "Section processing error: Message: stale element reference: stale element not found in the current frame\n  (Session info: chrome=143.0.7499.147); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception\nStacktrace:\nSymbols not available. Dumping unresolved backtrace:\n\t0x7ff6fad888e5\n\t0x7ff6fad88940\n\t0x7ff6fab6165d\n\t0x7ff6fab692cc\n\t0x7ff6fab6c3b4\n\t0x7ff6fab6c47f\n\t0x7ff6fabb92e5\n\t0x7ff6fabb9d3c\n\t0x7ff6faba"
+      },
+      {
+        "timestamp": "2025-12-23T13:05:33.532241",
+        "level": "warning",
+        "message": "Section processing error: Message: stale element reference: stale element not found in the current frame\n  (Session info: chrome=143.0.7499.147); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception\nStacktrace:\nSymbols not available. Dumping unresolved backtrace:\n\t0x7ff6fad888e5\n\t0x7ff6fad88940\n\t0x7ff6fab6165d\n\t0x7ff6fab692cc\n\t0x7ff6fab6c3b4\n\t0x7ff6fab6c47f\n\t0x7ff6fabb92e5\n\t0x7ff6fabb9d3c\n\t0x7ff6faba"
+      },
+      {
+        "timestamp": "2025-12-23T13:05:33.540741",
+        "level": "warning",
+        "message": "Section processing error: Message: stale element reference: stale element not found in the current frame\n  (Session info: chrome=143.0.7499.147); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception\nStacktrace:\nSymbols not available. Dumping unresolved backtrace:\n\t0x7ff6fad888e5\n\t0x7ff6fad88940\n\t0x7ff6fab6165d\n\t0x7ff6fab692cc\n\t0x7ff6fab6c3b4\n\t0x7ff6fab6c47f\n\t0x7ff6fabb92e5\n\t0x7ff6fabb9d3c\n\t0x7ff6faba"
+      },
+      {
+        "timestamp": "2025-12-23T13:05:33.547740",
+        "level": "warning",
+        "message": "Section processing error: Message: stale element reference: stale element not found in the current frame\n  (Session info: chrome=143.0.7499.147); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception\nStacktrace:\nSymbols not available. Dumping unresolved backtrace:\n\t0x7ff6fad888e5\n\t0x7ff6fad88940\n\t0x7ff6fab6165d\n\t0x7ff6fab692cc\n\t0x7ff6fab6c3b4\n\t0x7ff6fab6c47f\n\t0x7ff6fabb92e5\n\t0x7ff6fabb9d3c\n\t0x7ff6faba"
+      }
+    ],
+    "summary": {
+      "sections_count": 1,
+      "total_cards": 0,
+      "scraping_duration": "2025-12-23T13:05:33.547740",
+      "status": "completed"
+    }
+  }
+]

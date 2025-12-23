@@ -13,12 +13,13 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException, NoSuchElementException
 from base import NissanScraperBase
-from build_expand_clickers import main as clicker
+from build_expand_clickers import SmartCardButtonClicker, main as clicker
 
 
 class NissanBuildPageScraper(NissanScraperBase):
     def __init__(self, headless=False):
         super().__init__(headless)
+        # self.headless = headless
         self.current_data = {}
         self.scraping_log = []
         
@@ -41,21 +42,85 @@ class NissanBuildPageScraper(NissanScraperBase):
                 "color_section": {
                     "id": "exterior.colour",
                     "standard": {
-                        "title": "h4",
+                        "anchors": {
+                        "primary_xpath": "//h4[normalize-space()='Standard']/parent::div",
+                        "fallback_xpath": "//div[h4 and .//img[contains(@alt,'Exterior Color')]]"
+                        },
                         "colors": {
-                            "container": "div > div > section > div > div:first-child",
-                            "color_button": "button",
-                            "name": "div > p",
-                            "image": "div > div > img"
+                        "color_button": {
+                            "css": "button",
+                            "fallback_xpath": ".//button[.//img]"
+                        },
+                        "name": {
+                            "css": "p",
+                            "fallback_xpath": ".//p[normalize-space()]"
+                        },
+                        "image": {
+                            "css": "img",
+                            "fallback_xpath": ".//img[contains(@alt,'Exterior')]"
+                        }
                         }
                     },
+
                     "premium": {
-                        "title": "h4",
+                        "anchors": {
+                        "primary_xpath": "//h4[normalize-space()='Premium Colors']/parent::div",
+                        "fallback_xpath": "//div[h4 and .//p[contains(text(),'$')]]"
+                        },
                         "colors": {
-                            "container": "div > div > section > div > div:nth-child(2)",
-                            "color_button": "button",
-                            "name": ["div > p", "div:nth-child(2) > p"],
-                            "image": "div > div > img"
+                        "color_button": {
+                            "css": "button",
+                            "fallback_xpath": ".//button[.//p[contains(text(),'$')]]"
+                        },
+                        "name": {
+                            "css": "div > p",
+                            "fallback_xpath": ".//p[not(contains(text(),'$'))]"
+                        },
+                        "price": {
+                            "css": "div > p:first-child",
+                            "fallback_xpath": ".//p[contains(text(),'$')]"
+                        },
+                        "image": {
+                            "css": "img",
+                            "fallback_xpath": ".//img[contains(@alt,'Exterior')]"
+                        }
+                        }
+                    }
+                },
+                "wheels": {
+                    "id": "wheels",
+                    "anchors": {
+                    "primary_xpath": "//h3[normalize-space()='Wheels']/ancestor::div[@id='wheels']",
+                    "fallback_xpath": "//div[@data-testid='NGST_QA_rail_section' and .//h3]"
+                    },
+                    "options": {
+                        "container": {
+                            "primary_xpath": ".//ul[@data-testid='NGST_QA_option_list']",
+                            "fallback_xpath": ".//ul[.//li]"
+                        },
+                        "item": {
+                            "css": "li",
+                            "fallback_xpath": ".//li[.//img]"
+                        },
+                        "name": {
+                            "css": "p[id$='_title']",
+                            "fallback_xpath": ".//p[normalize-space() and not(contains(text(),'$'))]"
+                        },
+                        "price": {
+                            "css": "p:has(span)",
+                            "fallback_xpath": ".//p[contains(text(),'$')]"
+                        },
+                        "image": {
+                            "css": "img",
+                            "fallback_xpath": ".//img[contains(@alt,'Wheels')]"
+                        },
+                        "details_button": {
+                            "css": "button[data-testid='NGST_QA_details_button']",
+                            "fallback_xpath": ".//button[normalize-space()='Details']"
+                        },
+                        "add_button": {
+                            "css": "button:last-child",
+                            "fallback_xpath": ".//button[normalize-space()='Add']"
                         }
                     }
                 }
@@ -94,28 +159,60 @@ class NissanBuildPageScraper(NissanScraperBase):
         self.COMMON_SELECTORS = {
             "section": {
                 "container": '[data-testid="NGST_QA_rail_section"]',
-                "title": 'div > div > div > h3',
+                "title": 'h3[data-testid]',
                 "cards_list": '[data-testid="NGST_QA_option_list"]',
-                "card_item": "li"
+                "card_item": 'li[data-testid]'
             },
             "card": {
-                "image": 'div > img',
-                "name": 'p.sc-a64f1049-0',  # Your provided class
-                "price": 'p.sc-eQwNpu.uvdsE',  # Your provided class
-                "category": 'span.sc-eQwNpu.fjTNkD',  # Your provided class
+                # radio wrapper (selection state)
+                "radio_button": 'div[role="radio"]',
+
+                # image (alt is stable)
+                "image": 'div[role="radio"] img',
+
+                # name → id always ends with _title
+                "name": 'p[id$="_title"]',
+
+                # price → only if exists (wheels / accessories)
+                "price": 'p:has(span)',
+
+                # details button (data-testid is solid)
                 "details_button": '[data-testid="NGST_QA_details_button"]',
-                "radio_button": 'div[role="radio"]'
+
+                # selected state (checked radio)
+                "is_selected": 'div[role="radio"][aria-checked="true"]'
             },
             "details_modal": {
                 "container": '[data-testid="NGST_QA_option_detail"]',
-                "image": 'div > div:nth-child(2) > div > img',
-                "name": "h2",
-                "subname": "h3",
-                "price": 'div:nth-child(2)',
-                "specification": 'div:nth-child(3)',
-                "description": 'div:nth-child(2) > p'
+                "image": 'img',
+                "name": 'h2',
+                "subname": 'h3',
+                "price": './/p[contains(text(),"$")]',
+                "specification": './/div[.//ul]',
+                "description": './/p'
             },
-            "main_image": "/html/body/main/div/div[2]/div[1]/div/div[1]/div[1]/div[1]/div[2]/div/div[1]/img"
+
+            # absolute xpath avoid করলে ভালো, তাও রাখলাম
+            "main_image": "//main//img[contains(@alt,'Exterior') or contains(@alt,'Interior')]"
+        }
+    
+    def smart_click_card_buttons(self):
+        """
+        Smart clicking of card buttons (only PLUS icons) and Show More buttons
+        """
+        # Create smart clicker instance
+        smart_clicker = SmartCardButtonClicker(headless=self.headless)
+        smart_clicker.driver = self.driver  # Use existing driver
+        
+        # Click card buttons with icon checking
+        card_results = smart_clicker.click_card_buttons_with_icon_check()
+        
+        # Click Show More buttons
+        show_more_results = smart_clicker.click_show_more_buttons()
+        
+        return {
+            'card_button_results': card_results,
+            'show_more_results': show_more_results
         }
     
     def log_scraping(self, level, message):
@@ -141,7 +238,45 @@ class NissanBuildPageScraper(NissanScraperBase):
         except Exception as e:
             self.log_scraping("error", f"Main image extraction failed: {str(e)}")
             return None
-    
+    def run_smart_click_before_scraping(driver, headless=False):
+        """
+        Run SmartCardButtonClicker logic on the CURRENTLY LOADED build page
+        without reloading or navigating away.
+        Call this right after page load, before scraping starts.
+        """
+        try:
+            print("      ▶ Running smart card button clicker (pre-scrape)...")
+
+            smart_clicker = SmartCardButtonClicker(headless=headless)
+
+            # 🔑 CRITICAL: reuse same driver & same page
+            smart_clicker.driver = driver
+
+            # Safety wait (React hydration complete)
+            time.sleep(2)
+
+            # Handle popups if any
+            smart_clicker.handle_initial_popups()
+
+            # Click PLUS-icon card buttons
+            card_results = smart_clicker.click_card_buttons_with_icon_check()
+
+            # Click Show More buttons
+            show_more_results = smart_clicker.click_show_more_buttons()
+
+            print("      ✓ Smart clicking finished, scraping can start now")
+
+            return {
+                "card_button_results": card_results,
+                "show_more_results": show_more_results
+            }
+
+        except Exception as e:
+            print(f"      ⚠ Smart clicker failed: {e}")
+            return {
+                "error": str(e)
+            }
+
     def initialize_scraping(self, build_url):
         """Initialize scraping process for a build URL"""
         self.current_data = {
@@ -178,7 +313,9 @@ class NissanBuildPageScraper(NissanScraperBase):
             self._close_popups()
             print("clicking card expand buttons...")
             
-            clicker()
+            self.run_smart_click_before_scraping(self.driver)
+            time.sleep(1)
+
             # Extract main image
             print("5. Extracting main image...")
             self.extract_main_image()
@@ -576,147 +713,138 @@ class NissanBuildPageScraper(NissanScraperBase):
         return powertrain_data
     
     def scrape_exterior(self, container):
-        """Scrape exterior section with colors"""
+        """Scrape exterior section with colors, cards, and wheels"""
         print("    Processing Exterior section...")
         
         exterior_data = {
             "type": "exterior",
-            "colors": {
-                "standard": [],
-                "premium": []
-            }
+            "colors": {"standard": [], "premium": []},
+            "cards": [],
+            "wheels": []
         }
-        
-        try:
-            # Try to find color section
-            color_section = self.driver.find_element(By.ID, "exterior.colour")
-            
-            # Extract standard colors
+
+        def safe_find_element(parent, by, value, fallback_by=None, fallback_value=None):
             try:
-                standard_container = color_section.find_element(
-                    By.CSS_SELECTOR, 
-                    self.section_config["exterior"]["color_section"]["standard"]["colors"]["container"]
-                )
-                
-                standard_colors = standard_container.find_elements(
-                    By.CSS_SELECTOR,
-                    self.section_config["exterior"]["color_section"]["standard"]["colors"]["color_button"]
-                )
-                
-                for idx, color_btn in enumerate(standard_colors[:5]):  # Limit to 5
-                    try:
-                        color_info = self._extract_color_info(color_btn, "standard")
-                        exterior_data["colors"]["standard"].append(color_info)
-                    except Exception as e:
-                        print(f"        ⚠ Standard color {idx} error: {e}")
-                        continue
-                        
-            except Exception as e:
-                print(f"      ⚠ Standard colors error: {e}")
-            
-            # Extract premium colors
-            try:
-                premium_container = color_section.find_element(
-                    By.CSS_SELECTOR,
-                    self.section_config["exterior"]["color_section"]["premium"]["colors"]["container"]
-                )
-                
-                premium_colors = premium_container.find_elements(
-                    By.CSS_SELECTOR,
-                    self.section_config["exterior"]["color_section"]["premium"]["colors"]["color_button"]
-                )
-                
-                for idx, color_btn in enumerate(premium_colors[:5]):  # Limit to 5
-                    try:
-                        color_info = self._extract_color_info(color_btn, "premium")
-                        exterior_data["colors"]["premium"].append(color_info)
-                    except Exception as e:
-                        print(f"        ⚠ Premium color {idx} error: {e}")
-                        continue
-                        
-            except Exception as e:
-                print(f"      ⚠ Premium colors error: {e}")
-            
-            # Also process any exterior cards
-            try:
-                cards_list = container.find_element(
-                    By.CSS_SELECTOR, self.COMMON_SELECTORS["section"]["cards_list"]
-                )
-                cards = cards_list.find_elements(
-                    By.TAG_NAME, self.COMMON_SELECTORS["section"]["card_item"]
-                )
-                
-                exterior_data["cards"] = []
-                for idx, card in enumerate(cards[:3]):
-                    try:
-                        card_data = self._process_card(card, f"exterior_card_{idx}")
-                        exterior_data["cards"].append(card_data)
-                    except:
-                        continue
-                        
+                return parent.find_element(by, value)
             except:
-                pass  # No cards section
-            
-        except Exception as e:
-            print(f"    ⚠ Exterior scraping error: {e}")
-            exterior_data["error"] = str(e)
-        
-        return exterior_data
-    
-    def _extract_color_info(self, color_button, color_type):
-        """Extract color information from color button"""
-        color_info = {
-            "type": color_type,
-            "selected": False
-        }
-        
-        try:
-            # Color name
-            name_selectors = self.section_config["exterior"]["color_section"][color_type]["colors"]["name"]
-            if isinstance(name_selectors, list):
-                for selector in name_selectors:
+                if fallback_by and fallback_value:
                     try:
-                        name_element = color_button.find_element(By.CSS_SELECTOR, selector)
-                        color_info["name"] = name_element.text.strip()
-                        break
+                        return parent.find_element(fallback_by, fallback_value)
                     except:
+                        return None
+                return None
+
+        def safe_find_elements(parent, by, value, fallback_by=None, fallback_value=None):
+            try:
+                return parent.find_elements(by, value)
+            except:
+                if fallback_by and fallback_value:
+                    try:
+                        return parent.find_elements(fallback_by, fallback_value)
+                    except:
+                        return []
+                return []
+
+        # 1️⃣ Find color section
+        color_section = safe_find_element(self.driver, By.ID, "exterior.colour")
+        if color_section:
+            for color_type in ["standard", "premium"]:
+                cfg = self.section_config["exterior"]["color_section"][color_type]
+                container = safe_find_element(
+                    color_section,
+                    By.CSS_SELECTOR, cfg.get("colors", {}).get("container", ""),
+                    By.XPATH, cfg.get("anchors", {}).get("fallback_xpath")
+                )
+                if not container:
+                    continue
+
+                buttons = safe_find_elements(
+                    container,
+                    By.CSS_SELECTOR, cfg["colors"]["color_button"].get("css"),
+                    By.XPATH, cfg["colors"]["color_button"].get("fallback_xpath")
+                )
+                for idx, btn in enumerate(buttons[:5]):  # limit 5
+                    try:
+                        color_info = self._extract_color_info(btn, color_type)
+                        exterior_data["colors"][color_type].append(color_info)
+                    except Exception as e:
+                        print(f"        ⚠ {color_type.capitalize()} color {idx} error: {e}")
                         continue
-            else:
+
+        # 2️⃣ Exterior cards
+        cards_list = safe_find_element(container, By.CSS_SELECTOR, self.COMMON_SELECTORS["section"]["cards_list"])
+        if cards_list:
+            cards = safe_find_elements(cards_list, By.TAG_NAME, self.COMMON_SELECTORS["section"]["card_item"])
+            for idx, card in enumerate(cards[:3]):
                 try:
-                    name_element = color_button.find_element(
-                        By.CSS_SELECTOR, name_selectors
-                    )
-                    color_info["name"] = name_element.text.strip()
+                    card_data = self._process_card(card, f"exterior_card_{idx}")
+                    exterior_data["cards"].append(card_data)
                 except:
-                    pass
-            
-            # Color image
-            try:
-                img_element = color_button.find_element(
-                    By.CSS_SELECTOR, 
-                    self.section_config["exterior"]["color_section"][color_type]["colors"]["image"]
+                    continue
+
+        # 3️⃣ Wheels section
+        wheels_section = safe_find_element(self.driver, By.ID, "wheels")
+        if wheels_section:
+            wheels_cfg = self.section_config["exterior"]["wheels"]["options"]
+            wheels_container = safe_find_element(
+                wheels_section,
+                By.XPATH, wheels_cfg["container"].get("primary_xpath"),
+                By.XPATH, wheels_cfg["container"].get("fallback_xpath")
+            )
+            if wheels_container:
+                wheel_items = safe_find_elements(
+                    wheels_container,
+                    By.CSS_SELECTOR, wheels_cfg["item"].get("css"),
+                    By.XPATH, wheels_cfg["item"].get("fallback_xpath")
                 )
-                color_info["image"] = img_element.get_attribute("src")
-                color_info["image_alt"] = img_element.get_attribute("alt") or ""
+                for idx, item in enumerate(wheel_items[:5]):
+                    try:
+                        wheel_data = self._process_card(item, f"wheel_{idx}")
+                        exterior_data["wheels"].append(wheel_data)
+                    except:
+                        continue
+
+        return exterior_data
+
+
+    def _extract_color_info(self, color_button, color_type):
+        """Extract color info from a color button (dynamic class safe)"""
+        color_info = {"type": color_type, "selected": False, "name": "", "image": "", "image_alt": ""}
+        
+        try:
+            cfg = self.section_config["exterior"]["color_section"][color_type]["colors"]
+
+            # name
+            try:
+                name_el = color_button.find_element(By.CSS_SELECTOR, cfg["name"])
+                color_info["name"] = name_el.text.strip()
             except:
-                color_info["image"] = ""
-            
-            # Check if selected
+                pass
+
+            # image
+            try:
+                img_el = color_button.find_element(By.CSS_SELECTOR, cfg["image"])
+                color_info["image"] = img_el.get_attribute("src")
+                color_info["image_alt"] = img_el.get_attribute("alt") or ""
+            except:
+                pass
+
+            # selected
             try:
                 aria_pressed = color_button.get_attribute("aria-pressed")
                 color_info["selected"] = aria_pressed == "true"
             except:
                 try:
-                    # Check classes
                     classes = color_button.get_attribute("class")
                     color_info["selected"] = "selected" in classes.lower()
                 except:
                     pass
-                    
+
         except Exception as e:
             print(f"          ⚠ Color extraction error: {e}")
-        
+
         return color_info
+
     
     def scrape_interior(self, container):
         """Scrape interior section"""
@@ -1034,7 +1162,7 @@ def main():
     print(f"Found {len(build_links)} build links to process")
     
     # Initialize scraper
-    scraper = NissanBuildPageScraper(headless=False)  # Set to True for production
+    scraper = NissanBuildPageScraper()  # Set to True for production
     
     # Scrape single URL for testing
     # result = scraper.scrape_single_build(build_links[0])

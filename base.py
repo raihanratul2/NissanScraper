@@ -170,7 +170,36 @@ class NissanScraperBase:
         
         print(f"\nTotal cars found: {len(car_data)}")
         print("="*60)
-    
+    import json
+
+    def load_trim_data(
+        filepath="nissan_trims_detailed.json",
+        fallback_links=None
+    ):
+        if fallback_links is None:
+            fallback_links = [
+                "https://www.nissanusa.com/shopping-tools/build-price/crossovers-suvs/murano/2026/intelligent-awd-2026_murano_1323/30249:BACMi:A2qHV",
+                "https://www.nissanusa.com/shopping-tools/build-price/crossovers-suvs/murano/2026/intelligent-awd-2026_murano_1323/30249:BACMi:A2sHS"
+            ]
+
+        try:
+            with open(filepath, "r", encoding="utf-8") as f:
+                data = json.load(f)
+                links = [
+                    item.get("page_link")
+                    for item in data
+                    if item.get("page_link")
+                ]
+        except Exception as e:
+            print("⚠ Could not load trim data file:", e)
+            links = fallback_links
+
+        if not links:
+            print("❌ No build links found!")
+            return []
+
+        return links
+
     def close(self):
         """Close the browser"""
         try:
